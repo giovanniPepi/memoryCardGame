@@ -1,7 +1,12 @@
-import teste from "../img/Behemoth.gif";
+import React, { useState } from "react";
+import Header from "./Header";
 
 const Game = () => {
-  return <img src={teste} className="teste" alt="teste" />;
+  return (
+    <main>
+      <Header />
+    </main>
+  );
 };
 
 export default Game;
