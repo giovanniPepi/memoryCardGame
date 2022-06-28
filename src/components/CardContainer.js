@@ -68,7 +68,6 @@ const CardContainer = () => {
 
   const getRandomCard = () => {
     let rand = Math.floor(Math.random() * 30);
-    console.log(rand);
     return rand;
   };
 

@@ -3,17 +3,45 @@ import CardContainer from "./CardContainer";
 import Header from "./Header";
 
 const Game = () => {
-  const [scoreInfo, setScore] = useState({
-    score: 0,
-    highestScore: 0,
-    maximumPossibleScore: 0,
-  });
+  const [score, setScore] = useState(0);
+  const [highest, setHighest] = useState(0);
+  const [cardsArray, setCardsArray] = useState(0);
 
-  const { score, highestScore, maximumPossibleScore } = scoreInfo;
+  const handleScore = () => {
+    setScore((prevScore) => prevScore + 1);
+  };
+
+  const handleHighest = () => {
+    setHighest((prevScore) => prevScore + 1);
+  };
+
+  const handleCard = (card) => {
+    setCardsArray((prevArray) => [...prevArray, card]);
+  };
+
+  const reset = () => {
+    setScore(0);
+    setCardsArray([]);
+  };
+
+  const gameLogic = (card) => {
+    if (!cardsArray.includes(card)) {
+      handleCard(card);
+      handleScore();
+    } else {
+      handleHighest();
+      reset();
+    }
+  };
 
   return (
     <main>
-      <Header score={score} highest={highestScore} max={maximumPossibleScore} />
+      <Header
+        score={score}
+        highest={highest}
+        maximum={30}
+        gameLogic={gameLogic}
+      />
       <CardContainer />
     </main>
   );
