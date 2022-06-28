@@ -36,13 +36,8 @@ const Game = () => {
 
   return (
     <main>
-      <Header
-        score={score}
-        highest={highest}
-        maximum={30}
-        gameLogic={gameLogic}
-      />
-      <CardContainer />
+      <Header score={score} highest={highest} maximum={30} />
+      <CardContainer score={score} highest={highest} gameLogic={gameLogic} />
     </main>
   );
 };
