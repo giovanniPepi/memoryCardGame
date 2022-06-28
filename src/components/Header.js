@@ -1,13 +1,7 @@
 import React, { useState } from "react";
 import demon from "../img/Demon.webp";
-const Header = () => {
-  const [scoreInfo, setScore] = useState({
-    score: 0,
-    highestScore: 0,
-    maximumPossibleScore: 0,
-  });
-
-  const { score, highestScore, maximumPossibleScore } = scoreInfo;
+const Header = (props) => {
+  const { score, highestScore, maximumPossibleScore } = props;
 
   return (
     <header>
