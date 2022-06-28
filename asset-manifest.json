@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/giovanniPepi/memoryCardGame/static/css/main.7fdf2ded.css",
+    "main.js": "/giovanniPepi/memoryCardGame/static/js/main.73117e65.js",
+    "static/media/Dragon_Lord.gif": "/giovanniPepi/memoryCardGame/static/media/Dragon_Lord.65304cc960345cd78a3b.gif",
+    "static/media/Demon.webp": "/giovanniPepi/memoryCardGame/static/media/Demon.b8fcf9c3d06863360c0e.webp",
+    "static/media/Behemoth.gif": "/giovanniPepi/memoryCardGame/static/media/Behemoth.91a7d4239968d8b11539.gif",
+    "static/media/Hydra.gif": "/giovanniPepi/memoryCardGame/static/media/Hydra.4e193598ebfbd2bb658e.gif",
+    "static/media/Cyclops.gif": "/giovanniPepi/memoryCardGame/static/media/Cyclops.5eead6a5aed5f9b264b0.gif",
+    "static/media/Blue_Djinn.webp": "/giovanniPepi/memoryCardGame/static/media/Blue_Djinn.8228e6a05b7b2d2d5d04.webp",
+    "static/media/Dragon.webp": "/giovanniPepi/memoryCardGame/static/media/Dragon.43d99a0a5012c146021b.webp",
+    "static/media/Panda.gif": "/giovanniPepi/memoryCardGame/static/media/Panda.71fc8ab379f416bfa7d9.gif",
+    "static/media/Guzzlemaw.gif": "/giovanniPepi/memoryCardGame/static/media/Guzzlemaw.ea56ab543b2b0a8f7a98.gif",
+    "static/media/Scarab.gif": "/giovanniPepi/memoryCardGame/static/media/Scarab.5b317d764f16055dd011.gif",
+    "static/media/Giant_Spider.webp": "/giovanniPepi/memoryCardGame/static/media/Giant_Spider.104f7e2dbe5f4f3e4647.webp",
+    "static/media/Juggernaut.webp": "/giovanniPepi/memoryCardGame/static/media/Juggernaut.df5f991da3438004b2bb.webp",
+    "static/media/Green_Djinn.webp": "/giovanniPepi/memoryCardGame/static/media/Green_Djinn.07d1b40f6ffbe36e512b.webp",
+    "static/media/Serpent_spawn.webp": "/giovanniPepi/memoryCardGame/static/media/Serpent_spawn.f488e43c811474b98aba.webp",
+    "static/media/Fire_Elemental.webp": "/giovanniPepi/memoryCardGame/static/media/Fire_Elemental.fd1c6d954149764a9a6f.webp",
+    "static/media/Pharaoh.webp": "/giovanniPepi/memoryCardGame/static/media/Pharaoh.5678af1425b7da5b180c.webp",
+    "static/media/A_Greedy_Eye.webp": "/giovanniPepi/memoryCardGame/static/media/A_Greedy_Eye.618a7f1c0677c2b9a772.webp",
+    "index.html": "/giovanniPepi/memoryCardGame/index.html",
+    "main.7fdf2ded.css.map": "/giovanniPepi/memoryCardGame/static/css/main.7fdf2ded.css.map",
+    "main.73117e65.js.map": "/giovanniPepi/memoryCardGame/static/js/main.73117e65.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7fdf2ded.css",
+    "static/js/main.73117e65.js"
+  ]
+}
