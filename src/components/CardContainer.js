@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import behemoth from "../img/Behemoth.gif";
 import blueDjinn from "../img/Blue_Djinn.webp";
 import cyclops from "../img/Cyclops.gif";
@@ -32,7 +32,7 @@ import eye from "../img/A_Greedy_Eye.webp";
 
 import Card from "./Card";
 
-const CardContainer = () => {
+const CardContainer = (props) => {
   const images = [
     {
       src: demon,
@@ -219,19 +219,36 @@ const CardContainer = () => {
   const { score, highest, gameLogic } = props;
   const [cards, setCards] = useState(images);
 
-  /*   const getRandomCard = () => {
-    let rand = Math.floor(Math.random() * 30);
-    return rand;
+  const shuffle = (newCards) => {
+    // receives the preivous cards as arguments
+    for (let i = newCards.length - 1; i > 0; i--) {
+      let rand = Math.floor(Math.random() * i); // this logic will always favor the lower indexes <-----------------------------------
+      console.log(rand); //
+      [newCards[rand], newCards[i]] = [newCards[i], newCards[rand]]; // switch cards position on array
+    }
   };
- */
+
+  useEffect(() => {
+    const newCards = [...cards]; // passes the current cards to shuffling
+    shuffle(newCards);
+    setCards(newCards); // store newcards in state
+  }, [score, highest]); // useEffect will rerun whenever one of the depency items change;
+
   return (
-    <div>
-      {/*       <Card image={monsters[getRandomCard()]} />
-      <Card image={monsters[getRandomCard()]} />
-      <Card image={monsters[getRandomCard()]} />
-      <Card image={monsters[getRandomCard()]} />
- */}{" "}
-    </div>
+    <>
+      {cards.map(
+        (
+          card // creates a <Card /> for each card in the array
+        ) => (
+          <Card
+            card={card}
+            key={card.title}
+            gameLogic={gameLogic}
+            image={card.src}
+          />
+        )
+      )}
+    </>
   );
 };
 

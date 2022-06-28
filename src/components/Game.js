@@ -5,7 +5,7 @@ import Header from "./Header";
 const Game = () => {
   const [score, setScore] = useState(0);
   const [highest, setHighest] = useState(0);
-  const [cardsArray, setCardsArray] = useState(0);
+  const [cardsArray, setCardsArray] = useState([]);
 
   const handleScore = () => {
     setScore((prevScore) => prevScore + 1);

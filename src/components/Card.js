@@ -1,11 +1,25 @@
 const Card = (props) => {
-  const { image, name } = props;
+  const {
+    card: { src, image, title, backgroundColor, borderStyle },
+    gameLogic,
+  } = props;
+
+  const style = {
+    backgroundColor: backgroundColor,
+    border: borderStyle,
+  };
 
   return (
-    <div className="card">
-      <img src={image} alt="card" />
-      <p>{name}</p>
-    </div>
+    <button
+      className="card"
+      style={style}
+      onClick={gameLogic.bind(this, title)}
+    >
+      <figure>
+        <img src={src} alt="card" />
+        <figcaption>{title}</figcaption>
+      </figure>
+    </button>
   );
 };
 
