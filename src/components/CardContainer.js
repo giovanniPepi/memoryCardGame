@@ -235,7 +235,7 @@ const CardContainer = (props) => {
   }, [score, highest]); // useEffect will rerun whenever one of the depency items change;
 
   return (
-    <>
+    <section className="cardContainer">
       {cards.map(
         (
           card // creates a <Card /> for each card in the array
@@ -248,7 +248,7 @@ const CardContainer = (props) => {
           />
         )
       )}
-    </>
+    </section>
   );
 };
 

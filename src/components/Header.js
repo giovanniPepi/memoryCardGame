@@ -8,9 +8,18 @@ const Header = (props) => {
       <div className="headerContainer">
         <img src={demon} alt="demon" />
         <h3>Memory Card Game</h3>
-        <p>Score: {score}</p>
-        <p>Highest score: {highest}</p>
-        <p>Maximum possible score: {maximum}</p>
+        <p className="score">
+          Score
+          <p>{score}</p>
+        </p>
+        <p className="score">
+          Highest
+          <p>{highest}</p>
+        </p>
+        <p className="score">
+          Maximum possible
+          <p>{maximum}</p>
+        </p>
       </div>
     </header>
   );

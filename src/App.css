@@ -7,14 +7,44 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: linear-gradient(red, black);
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .headerContainer {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  height: 10vh;
 }
 
-h3 {
+.score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h3,
+p {
   margin: 0;
   padding: 0;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+  justify-content: center;
+  margin-top: 2rem;
+  row-gap: 1rem;
+  column-gap: 2rem;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  .headerContainer {
+    gap: 0.5rem;
+  }
+  .cardContainer {
+    grid-template-columns: repeat(auto-fit, minmax(50px, 150px));
+  }
 }

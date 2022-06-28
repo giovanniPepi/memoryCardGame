@@ -7,12 +7,15 @@ const Game = () => {
   const [highest, setHighest] = useState(0);
   const [cardsArray, setCardsArray] = useState([]);
 
-  const handleScore = () => {
-    setScore((prevScore) => prevScore + 1);
-  };
+  const handleScore = (point) => {
+    setScore((prevScore) => {
+      const score = prevScore + point;
 
-  const handleHighest = () => {
-    setHighest((prevScore) => prevScore + 1);
+      if (score > highest) {
+        setHighest(score);
+      }
+      return score;
+    });
   };
 
   const handleCard = (card) => {
@@ -27,9 +30,8 @@ const Game = () => {
   const gameLogic = (card) => {
     if (!cardsArray.includes(card)) {
       handleCard(card);
-      handleScore();
+      handleScore(1);
     } else {
-      handleHighest();
       reset();
     }
   };
