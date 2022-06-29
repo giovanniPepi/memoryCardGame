@@ -46,7 +46,7 @@ body {
 }
 .placar {
   font-size: 1.5rem;
-  padding: 0.5rem;
+  padding: 0.3rem;
   border-radius: 1rem;
 }
 .placar[animation="1"] {
@@ -59,6 +59,10 @@ h3,
 p {
   margin: 0;
   padding: 0;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 .cardContainer {
@@ -118,5 +122,9 @@ p {
   }
   .instructionsBtn {
     max-width: 50vw;
+  }
+
+  .placar {
+    font-size: 1.2rem;
   }
 }
