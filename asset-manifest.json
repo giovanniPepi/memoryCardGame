@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/memoryCardGame/static/css/main.4f4cef5a.css",
+    "main.css": "/memoryCardGame/static/css/main.975a6104.css",
     "main.js": "/memoryCardGame/static/js/main.2bf64b4e.js",
     "static/media/Dragon_Lord.gif": "/memoryCardGame/static/media/Dragon_Lord.65304cc960345cd78a3b.gif",
     "static/media/Demon.webp": "/memoryCardGame/static/media/Demon.b8fcf9c3d06863360c0e.webp",
@@ -20,11 +20,11 @@
     "static/media/Pharaoh.webp": "/memoryCardGame/static/media/Pharaoh.5678af1425b7da5b180c.webp",
     "static/media/A_Greedy_Eye.webp": "/memoryCardGame/static/media/A_Greedy_Eye.618a7f1c0677c2b9a772.webp",
     "index.html": "/memoryCardGame/index.html",
-    "main.4f4cef5a.css.map": "/memoryCardGame/static/css/main.4f4cef5a.css.map",
+    "main.975a6104.css.map": "/memoryCardGame/static/css/main.975a6104.css.map",
     "main.2bf64b4e.js.map": "/memoryCardGame/static/js/main.2bf64b4e.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f4cef5a.css",
+    "static/css/main.975a6104.css",
     "static/js/main.2bf64b4e.js"
   ]
 }
