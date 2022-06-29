@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import CardContainer from "./CardContainer";
 import Header from "./Header";
+import Instructions from "./Instructions";
 
 const Game = () => {
   const [score, setScore] = useState(0);
@@ -39,6 +40,7 @@ const Game = () => {
   return (
     <main>
       <Header score={score} highest={highest} maximum={30} />
+      <Instructions />
       <CardContainer score={score} highest={highest} gameLogic={gameLogic} />
     </main>
   );

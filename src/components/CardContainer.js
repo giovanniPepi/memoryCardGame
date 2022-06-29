@@ -223,7 +223,6 @@ const CardContainer = (props) => {
     // receives the preivous cards as arguments
     for (let i = newCards.length - 1; i > 0; i--) {
       let rand = Math.floor(Math.random() * i); // this logic will always favor the lower indexes <-----------------------------------
-      console.log(rand); //
       [newCards[rand], newCards[i]] = [newCards[i], newCards[rand]]; // switch cards position on array
     }
   };
