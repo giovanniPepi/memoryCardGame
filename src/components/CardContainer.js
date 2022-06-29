@@ -239,12 +239,7 @@ const CardContainer = (props) => {
         (
           card // creates a <Card /> for each card in the array
         ) => (
-          <Card
-            card={card}
-            key={card.title}
-            gameLogic={gameLogic}
-            image={card.src}
-          />
+          <Card card={card} key={card.title} gameLogic={gameLogic} />
         )
       )}
     </section>
