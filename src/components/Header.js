@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import demon from "../img/Demon.webp";
+
 const Header = (props) => {
   const { score, highest, maximum, animation, highestAnimation } = props;
 
